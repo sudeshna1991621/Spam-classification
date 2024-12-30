@@ -1,8 +1,9 @@
-#!/bin/bash
+mkdir -p ~/.streamlit/
 
-# Install NLTK first to avoid missing module errors
-pip install nltk
-
-# Download required NLTK data
-mkdir -p ~/.nltk_data
-python -m nltk.downloader -d ~/.nltk_data punkt stopwords
+echo "\
+[server]\n\
+port = $PORT\n\
+enableCORS = false\n\
+headless = true\n\
+\n\
+" > ~/.streamlit/config.toml
