@@ -4,4 +4,4 @@
 pip install -r requirements.txt
 
 # Download NLTK data (including 'punkt')
-python -m nltk.downloader punkt
+python -m nltk.downloader popular
